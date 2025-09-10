@@ -1,26 +1,56 @@
-# Compiler Design Programs
 
-This repository contains Lex programs for compiler design lab assignments. The programs are organized into two folders:
 
-## 1. Lab-Programs
+# 🖥️ Compiler Design Programs
 
-Lex programs for various compiler design tasks.
+This repository contains a collection of **Lex** and **C programs** implemented for Compiler Design coursework.
+Programs are organized into two main folders:
 
-| Program Name | Description | Link |
-|--------------|-------------|------|
-| Program1.l   | Identifies valid identifiers in input. | [Lab-Programs/Program1.l](Lab-Programs/Program1.l) |
-| Program2.l   | Recognizes C keywords. | [Lab-Programs/Program2.l](Lab-Programs/Program2.l) |
-| Program3.l   | Classifies operators (arithmetic, relational, logical, bitwise, assignment). | [Lab-Programs/Program3.l](Lab-Programs/Program3.l) |
-| Program4.l   | Identifies constants, comments, identifiers, and operators in C.  | [Lab-Programs/Program4.l](Lab-Programs/Program4.l) |
-| Program5.l   | Distinguishes vowels and consonants. | [Lab-Programs/Program5.l](Lab-Programs/Program5.l)  |
-| Program6.l   | Identifies functions and comments in C.  | [Lab-Programs/Program6.l](Lab-Programs/Program6.l). |
-| Program7.c   | Top-Down parsing using backtracking (brute force) method for a given grammar.  | [Lab-Programs/Program7.c](Lab-Programs/Program7.c)  |
+* **Lab-Programs** → Core compiler design experiments
+* **Assignment-Programs** → Additional assignment-based tasks
 
-## 2. Assignment-Programs
+---
 
-Additional Lex programs for assignments.
+## 🔹 Lab Programs
 
-| Program Name | Description | Link |
-|--------------|-------------|------|
-| Program1.l   | Assignment program for identifier recognition. | [Assignment-Programs/Program1.l](Assignment-Programs/Program1.l) |
-| Program2.l   | Assignment program for recognizing various representations of real numbers in programming languages. | [Assignment-Programs/Program2.l](Assignment-Programs/Program2.l) |
+Located in [`Lab-Programs/`](Lab-Programs/).
+These cover fundamental problems in compiler construction.
+
+<details>
+<summary>📘 Program List</summary>
+
+* **Program1.l** → Detects valid identifiers
+* **Program2.l** → Recognizes C keywords
+* **Program3.l** → Classifies operators (arithmetic, relational, logical, bitwise, assignment)
+* **Program4.l** → Identifies constants, comments, identifiers, and operators in C
+* **Program5.l** → Distinguishes vowels and consonants
+* **Program6.l** → Finds functions and comments in C code
+* **Program7.c** → Demonstrates top-down parsing using brute-force backtracking
+
+</details>
+
+---
+
+## 🔹 Assignment Programs
+
+Located in [`Assignment-Programs/`](Assignment-Programs/).
+These are additional exercises designed to strengthen concepts.
+
+<details>
+<summary>📘 Program List</summary>
+
+* **Program1.l** → Lex program for identifier recognition
+* **Program2.l** → Recognizes different forms of real numbers in programming languages
+
+</details>
+
+---
+
+## 🚀 Usage
+
+To run a Lex program:
+
+```bash
+lex filename.l
+gcc lex.yy.c
+./a.out   # or ./a.exe on Windows
+```
